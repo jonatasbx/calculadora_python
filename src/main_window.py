@@ -10,12 +10,17 @@ class MainWindow(QMainWindow):
         self.setCentralWidget(self.cw)
 
         #titulo da janela
-        self.setWindowTitle('Coalculadora')
+        self.setWindowTitle('Calculadora')
 
     def adjustFixedSize(self):
         #ultima coisa a ser feita
         self.adjustSize()
         self.setFixedSize(self.width(), self.height())
+
+    def addWidgetToVlayout(self, widget:QWidget):
+        self.v_layout.addWidget(widget)
+        self.adjustFixedSize()
+
 
 
 

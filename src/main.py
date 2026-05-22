@@ -13,7 +13,7 @@ if __name__ == '__main__':
 
     label1 = QLabel('O meu texto')
     label1.setStyleSheet('font-size: 50px')
-    window.v_layout.addWidget(label1)
+    window.addWidgetToVlayout(label1)
     window.adjustFixedSize()
 
     window.show()
